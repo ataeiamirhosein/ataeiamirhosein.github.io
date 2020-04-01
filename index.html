@@ -51,15 +51,15 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <h1><b>My Portfolio</b></h1>
     <div class="w3-section w3-bottombar w3-padding-16">
       <span class="w3-margin-right">Filter:</span>
-      <button class="w3-button w3-white w3-hide-small">
+      <button class="w3-third tablink w3-button w3-white w3-hide-small">
          <a href="javascript:void(0)" onclick="openSection(event, 'Cert');">
         <i class="fa fa-diamond w3-margin-right"></i>Certificates</a>
       </button>
-      <button class="w3-button w3-white w3-hide-small">
+      <button class="w3-third tablink w3-button w3-white w3-hide-small">
          <a href="javascript:void(0)" onclick="openSection(event, 'Proj');">
         <i class="fa fa-photo w3-margin-right"></i>Projects</a>
            </button>
-      <button class="w3-button w3-white w3-hide-small">
+      <button class="w3-third tablink w3-button w3-white w3-hide-small">
          <a href="javascript:void(0)" onclick="openSection(event, 'Med');">
         <i class="fa fa-map-pin w3-margin-right"></i>Media</a>
            </button>
@@ -243,9 +243,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 <!-- End page content -->
 </div>
   <script>
-function openSection(evt, cityName) {
+function openSection(evt, sectionName) {
   var i, x, tablinks;
-  x = document.getElementsByClassName("city");
+  x = document.getElementsByClassName("Section");
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
